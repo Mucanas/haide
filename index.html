@@ -1,0 +1,67 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background: #ff758c;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        button:hover {
+            background: #ff5364;
+            transform: scale(1.05);
+        }
+        #mensagem {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #d60000;
+            display: none;
+        }
+        @media (max-width: 600px) {
+            button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+            #mensagem {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button onclick="mostrarMensagem()">Botão da Surpresa</button>
+    <p id="mensagem">Haide querida linda(isso é mentira) burra<br>Ass: ChatGPT</p>
+    <script>
+        function mostrarMensagem() {
+            document.getElementById('mensagem').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
